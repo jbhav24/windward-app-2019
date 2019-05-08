@@ -48,7 +48,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customize Schedule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzx-El-MqJ">
-                                <rect key="frame" x="20" y="69" width="223" height="49"/>
+                                <rect key="frame" x="20" y="69" width="345" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="hag-My-z6o"/>
                                 </constraints>
@@ -161,7 +161,7 @@
                             <constraint firstItem="2ik-10-pDc" firstAttribute="top" secondItem="WiW-fC-Oun" secondAttribute="bottom" constant="8" symbolic="YES" id="4F5-U1-pSN"/>
                             <constraint firstItem="Inm-wB-9V2" firstAttribute="trailing" secondItem="LSl-DU-o1d" secondAttribute="trailing" id="75H-1l-gxx"/>
                             <constraint firstItem="WiW-fC-Oun" firstAttribute="top" secondItem="zzx-El-MqJ" secondAttribute="bottom" constant="7" id="7Bq-Ui-mkg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zzx-El-MqJ" secondAttribute="trailing" constant="171" id="7ao-3J-YQs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zzx-El-MqJ" secondAttribute="trailing" constant="49" id="7ao-3J-YQs"/>
                             <constraint firstItem="2ik-10-pDc" firstAttribute="trailing" secondItem="Sbj-R5-u4R" secondAttribute="trailing" id="7gF-H4-ZSq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uti-OR-IUS" secondAttribute="bottom" constant="135" id="DtY-Yh-rrp"/>
                             <constraint firstItem="LSl-DU-o1d" firstAttribute="trailing" secondItem="9ZH-FQ-qmN" secondAttribute="trailing" id="DuB-kU-3zM"/>
