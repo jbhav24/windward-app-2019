@@ -8,6 +8,7 @@ target 'Windward App' do
   # Pods for Windward App
   pod 'CalendarKit'
   pod 'SwiftyOnboard'
+  pod 'IQKeyboardManagerSwift'
 
   target 'Windward AppTests' do
     inherit! :search_paths
