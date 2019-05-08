@@ -14,8 +14,8 @@ class IntroViewController: UIViewController {
     var swiftyOnboard: SwiftyOnboard!
     let colors : [UIColor] = [#colorLiteral(red: 0.9980840087, green: 0.3723873496, blue: 0.4952875376, alpha: 1),#colorLiteral(red: 0.2666860223, green: 0.5116362572, blue: 1, alpha: 1),#colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1)]
     
-    var titleArray: [String] = ["HI", "HI2", "HI3"]
-    var subTitleArray: [String] = ["ASDF", "FURT", "ASDF"]
+    var titleArray: [String] = ["Status quo", "Innovation", "Community"]
+    var subTitleArray: [String] = ["Everybody knows it: students, teachers and even parents (because of students complaints), the schedule is hard. It is a pain to do everything from finding it to trying to figure out when your next class is.", "As part of our groups STEAM project we developed a solution for this issue plaguing the community", "We are opening this solution for the entire school to take advantage of and leverage in their pursuit for a better schedule."]
     
     var gradiant: CAGradientLayer = {
         let blue = UIColor(red: 69/255, green: 127/255, blue: 202/255, alpha: 1.0).cgColor

@@ -25,12 +25,9 @@ class CalendarViewController: DayViewController, DatePickerControllerDelegate {
     
     var testData : [ClassEvent] = []
     
-    var colors = [UIColor.blue,
-                  UIColor.yellow,
-                  UIColor.green,
-                  UIColor.red]
+    var colors = [UIColor.blue, UIColor.yellow, UIColor.green, UIColor.red]
     
-    var currentStyle = SelectedStyle.Light
+    var currentStyle = SelectedStyle.Dark
     
     override func viewDidLoad() {
         super.viewDidLoad()
