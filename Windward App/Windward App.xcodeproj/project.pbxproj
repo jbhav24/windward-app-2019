@@ -16,6 +16,9 @@
 		2919E17D228270370081D19A /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2919E17C228270370081D19A /* CalendarViewController.swift */; };
 		2919E17F228270500081D19A /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2919E17E228270500081D19A /* SetupViewController.swift */; };
 		2919E181228270FC0081D19A /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2919E180228270FC0081D19A /* IntroViewController.swift */; };
+		2919E183228274ED0081D19A /* CalendarNotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2919E182228274ED0081D19A /* CalendarNotificationController.swift */; };
+		2919E185228274F90081D19A /* StyleGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2919E184228274F90081D19A /* StyleGenerator.swift */; };
+		2919E187228275030081D19A /* DatePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2919E186228275030081D19A /* DatePickerController.swift */; };
 		9C00B9080588A12B9B8A82AA /* Pods_Windward_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A1FC78A109B32796736AC9 /* Pods_Windward_AppTests.framework */; };
 		BC14D4DBD85F607D17215294 /* Pods_Windward_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA6A3450A04F93BE8B95ABB /* Pods_Windward_App.framework */; };
 		C0A2161089636BEE004EC5E0 /* Pods_Windward_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91CF1D1AEAB4B62741DB8F63 /* Pods_Windward_AppUITests.framework */; };
@@ -57,6 +60,9 @@
 		2919E17C228270370081D19A /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		2919E17E228270500081D19A /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
 		2919E180228270FC0081D19A /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		2919E182228274ED0081D19A /* CalendarNotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarNotificationController.swift; sourceTree = "<group>"; };
+		2919E184228274F90081D19A /* StyleGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGenerator.swift; sourceTree = "<group>"; };
+		2919E186228275030081D19A /* DatePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerController.swift; sourceTree = "<group>"; };
 		294AD95088ABEFA07FF07D82 /* Pods-Windward AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Windward AppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Windward AppUITests/Pods-Windward AppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2E77E5B40BB3F267EA39A58F /* Pods-Windward AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Windward AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Windward AppTests/Pods-Windward AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4BA29EE142DACC79FBA63323 /* Pods-Windward AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Windward AppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Windward AppUITests/Pods-Windward AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +128,9 @@
 				2919E180228270FC0081D19A /* IntroViewController.swift */,
 				2919E17E228270500081D19A /* SetupViewController.swift */,
 				2919E17C228270370081D19A /* CalendarViewController.swift */,
+				2919E182228274ED0081D19A /* CalendarNotificationController.swift */,
+				2919E184228274F90081D19A /* StyleGenerator.swift */,
+				2919E186228275030081D19A /* DatePickerController.swift */,
 				2919E14E22826DCE0081D19A /* Main.storyboard */,
 				2919E15122826DCF0081D19A /* Assets.xcassets */,
 				2919E15322826DCF0081D19A /* LaunchScreen.storyboard */,
@@ -404,9 +413,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2919E17D228270370081D19A /* CalendarViewController.swift in Sources */,
+				2919E183228274ED0081D19A /* CalendarNotificationController.swift in Sources */,
 				2919E17F228270500081D19A /* SetupViewController.swift in Sources */,
 				2919E14B22826DCE0081D19A /* AppDelegate.swift in Sources */,
+				2919E187228275030081D19A /* DatePickerController.swift in Sources */,
 				2919E181228270FC0081D19A /* IntroViewController.swift in Sources */,
+				2919E185228274F90081D19A /* StyleGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +595,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQ5R2GJ4F2;
 				INFOPLIST_FILE = "Windward App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -601,6 +614,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQ5R2GJ4F2;
 				INFOPLIST_FILE = "Windward App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
