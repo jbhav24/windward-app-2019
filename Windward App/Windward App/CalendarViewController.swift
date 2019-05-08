@@ -131,10 +131,14 @@ class CalendarViewController: DayViewController, DatePickerControllerDelegate {
     // MARK: DayViewDelegate
     
     override func dayViewDidSelectEventView(_ eventView: EventView) {
+    
         guard let descriptor = eventView.descriptor as? Event else {
             return
         }
-        print("Event has been selected: \(descriptor) \(String(describing: descriptor.userInfo))")
+        
+        let alert = UIAlertController(title: "", message: descriptor.text, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     override func dayViewDidLongPressEventView(_ eventView: EventView) {
