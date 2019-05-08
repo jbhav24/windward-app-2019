@@ -39,16 +39,12 @@ class CalendarViewController: DayViewController, DatePickerControllerDelegate {
         testData.append(ClassEvent(title: "HEY MAN", date: Date(), period: TimePeriod(beginning: Date(), chunk: TimeChunk(seconds: 0, minutes: 10, hours: 1, days: 0, weeks: 0, months: 0, years: 0))))
         
         title = "Windward School"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Dark",
-                                                            style: .done,
-                                                            target: self,
-                                                            action: #selector(CalendarViewController.changeStyle))
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Change Date",
-                                                           style: .plain,
-                                                           target: self,
-                                                           action: #selector(CalendarViewController.presentDatePicker))
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Dark", style: .done, target: self, action: #selector(CalendarViewController.changeStyle))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Change Date", style: .plain, target: self, action: #selector(CalendarViewController.presentDatePicker))
         navigationController?.navigationBar.isTranslucent = false
         dayView.autoScrollToFirstEvent = true
+        
         reloadData()
     }
     
