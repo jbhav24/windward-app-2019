@@ -71,6 +71,12 @@ class CalendarViewController: DayViewController, DatePickerControllerDelegate {
         reloadData()
     }
     
+    func replacePeriodCustom(period: Int) -> String {
+        let periodName = "period" + "\(period)"
+        let name = UserDefaults.standard.string(forKey: periodName)
+        return name!
+    }
+    
     @objc func presentDatePicker() {
         let picker = DatePickerController()
         picker.date = dayView.state!.selectedDate
