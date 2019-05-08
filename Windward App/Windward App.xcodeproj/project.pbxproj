@@ -13,6 +13,9 @@
 		2919E15522826DCF0081D19A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2919E15322826DCF0081D19A /* LaunchScreen.storyboard */; };
 		2919E16022826DCF0081D19A /* Windward_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2919E15F22826DCF0081D19A /* Windward_AppTests.swift */; };
 		2919E16B22826DCF0081D19A /* Windward_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2919E16A22826DCF0081D19A /* Windward_AppUITests.swift */; };
+		2919E17D228270370081D19A /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2919E17C228270370081D19A /* CalendarViewController.swift */; };
+		2919E17F228270500081D19A /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2919E17E228270500081D19A /* SetupViewController.swift */; };
+		2919E181228270FC0081D19A /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2919E180228270FC0081D19A /* IntroViewController.swift */; };
 		9C00B9080588A12B9B8A82AA /* Pods_Windward_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A1FC78A109B32796736AC9 /* Pods_Windward_AppTests.framework */; };
 		BC14D4DBD85F607D17215294 /* Pods_Windward_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA6A3450A04F93BE8B95ABB /* Pods_Windward_App.framework */; };
 		C0A2161089636BEE004EC5E0 /* Pods_Windward_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91CF1D1AEAB4B62741DB8F63 /* Pods_Windward_AppUITests.framework */; };
@@ -51,6 +54,9 @@
 		2919E16622826DCF0081D19A /* Windward AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Windward AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2919E16A22826DCF0081D19A /* Windward_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Windward_AppUITests.swift; sourceTree = "<group>"; };
 		2919E16C22826DCF0081D19A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2919E17C228270370081D19A /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		2919E17E228270500081D19A /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+		2919E180228270FC0081D19A /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		294AD95088ABEFA07FF07D82 /* Pods-Windward AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Windward AppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Windward AppUITests/Pods-Windward AppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2E77E5B40BB3F267EA39A58F /* Pods-Windward AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Windward AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Windward AppTests/Pods-Windward AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4BA29EE142DACC79FBA63323 /* Pods-Windward AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Windward AppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Windward AppUITests/Pods-Windward AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -113,6 +119,9 @@
 			isa = PBXGroup;
 			children = (
 				2919E14A22826DCE0081D19A /* AppDelegate.swift */,
+				2919E180228270FC0081D19A /* IntroViewController.swift */,
+				2919E17E228270500081D19A /* SetupViewController.swift */,
+				2919E17C228270370081D19A /* CalendarViewController.swift */,
 				2919E14E22826DCE0081D19A /* Main.storyboard */,
 				2919E15122826DCF0081D19A /* Assets.xcassets */,
 				2919E15322826DCF0081D19A /* LaunchScreen.storyboard */,
@@ -371,6 +380,7 @@
 				"${BUILT_PRODUCTS_DIR}/CalendarKit/CalendarKit.framework",
 				"${BUILT_PRODUCTS_DIR}/DateToolsSwift/DateToolsSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Neon/Neon.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyOnboard/SwiftyOnboard.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -379,6 +389,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CalendarKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateToolsSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Neon.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyOnboard.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -392,7 +403,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2919E17D228270370081D19A /* CalendarViewController.swift in Sources */,
+				2919E17F228270500081D19A /* SetupViewController.swift in Sources */,
 				2919E14B22826DCE0081D19A /* AppDelegate.swift in Sources */,
+				2919E181228270FC0081D19A /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
